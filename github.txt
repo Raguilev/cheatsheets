@@ -1,0 +1,27 @@
+-------------------------------------- COMANDOS DE GIT --------------------------------------
+$clear <- limpia la terminal
+$git init <- crea repositorio localmente
+$git clone [link del repositorio en la nube] <- clona el repositorio de la nube
+$git add [nombre del archivo o ".", si quieres todos] <- añade los archivos modificados
+$git commit -m "[Comentario]" <- Sirve para comentar los cambios 
+$git status <- para verificar el estado de los archivos
+$git log <- verifica los cambios
+$git push origin [puede ser de una rama como: main]<- realiza los cambios en la nube (se debe ingresar con el usuario de github)
+$git fetch origin [puede ser de una rama como: main] <- trae los últimos cambios realizados del repositorio de la nube (en el caso de que existan)
+$git checkout [nombre de la rama a dirigirse] <- te dirige a la rama a trabajar 
+$git -b [nombre del nuevo branch] <- crea una nueva rama para realizar cambios sin afectar a la rama principal
+$git checkout -b [nombre del nuevo branch] <- crea y se dirige a la rama a trabajar
+$git fetch <- Te trae las ramas sin los cambios (sirve para que no modifique lo que estás trabajando)
+$git pull <- Te trae las ramas con los cambios efectuados
+$git tag [nombre a clasificar] <- Sirve para versionar o encasillar las versiones de los cambios realizados, se le aplica al ultimo commit realizado
+
+Para pasar repo local a github
+$ git remote add origin (link del repositorio)
+$ git push origin master
+
+Para hacer un merge de una rama a la rama principal, nos situaremos en la rama principal y después
+$git merge (nombre de la rama)
+
+O se puede optar realizar un pull request:
+
+Si quiero integrar los cambios al main, se deberá crear una "solicitud de cambio". Por ende después de realizar el $git push origin nuevo_cambio entonces me aparece un display de opciones donde se podrá visualizar el "pull request" ingresando al enlace que aparecerá. Esto último llevará a una pestaña donde se podrá hacer el merge factible.

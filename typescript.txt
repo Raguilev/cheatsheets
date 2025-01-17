@@ -1,0 +1,5 @@
+ctrl + ñ <-- abre la terminal (indispensable)
+npm init -y <-- crea el archivo package.json
+npm install typescript -g <- instala el typescript 
+npx tsc --init crea el archivo tsconfig.json
+npx tsc (nombre del archivo).ts <-- compila el cambio dentro del archivo
