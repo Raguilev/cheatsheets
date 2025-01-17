@@ -3,3 +3,10 @@ npm init -y <-- crea el archivo package.json
 npm install typescript -g <- instala el typescript 
 npx tsc --init crea el archivo tsconfig.json
 npx tsc (nombre del archivo).ts <-- compila el cambio dentro del archivo
+node (nombre).js <--- para ejecutar en el terminal despues de compilar
+
+no olvidar cambiar en tsconfig.json
+ "module": "ESNext",   
+
+no olvidar del archivo .gitignore y adentro de este
+*.js
